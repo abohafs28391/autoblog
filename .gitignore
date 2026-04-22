@@ -25,3 +25,4 @@ __pycache__/
 
 # Stats (generated at build)
 assets/stats.json
+!themes/
