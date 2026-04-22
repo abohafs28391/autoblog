@@ -1,0 +1,46 @@
+baseURL = "https://yourblog.netlify.app/"
+languageCode = "en-us"
+title = "TechPulse Daily"
+theme = "PaperMod"
+timeout = "120s"
+
+[build]
+  writeStats = true
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  env = "production"
+  description = "Daily insights on technology, AI, and the future of innovation"
+  keywords = ["technology", "AI", "artificial intelligence", "tech news", "innovation"]
+  author = "TechPulse Daily"
+  email = "contact@techpulse.daily"
+  defaultArchetype = "article"
+
+  [params.homeInfoParams]
+    Title = "Welcome to TechPulse Daily"
+    Content = "Your daily source for technology insights, AI breakthroughs, and innovation stories that matter."
+
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/techpulsedaily"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/techpulsedaily"
+
+[mediaTypes]
+  [mediaTypes."application/atom"]
+    suffixes = ["xml"]
+
+[outputFormats]
+  [outputFormats."ATOM"]
+    baseName = "feed"
+    mediaType = "application/atom"
+    isPlainText = false
+    rel = "alternate"
+
+[outputs]
+  home = ["HTML", "ATOM", "JSON"]

@@ -1,0 +1,27 @@
+# Hosted themes — pulled in by Hugo
+themes/
+
+# Hugo's generated assets
+public/
+resources/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor waste
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+.venv/
+
+# Logs
+*.log
+
+# Stats (generated at build)
+assets/stats.json
